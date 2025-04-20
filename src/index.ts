@@ -3,8 +3,12 @@ import { config } from './config'
 import { startHttpServer } from './render/server'
 import { registerEvents } from './events/registerEvents'
 import { setStatus } from './status/setStatus'
+import { autoPing } from './keepAlive/autoPing'
 
 startHttpServer()
+
+// keep alive
+autoPing()
 
 const client = new Client({
   intents: config.intents
