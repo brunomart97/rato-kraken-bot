@@ -1,7 +1,10 @@
 import { Client } from 'discord.js'
 import { config } from './config'
+import { startHttpServer } from './render/server'
 import { registerEvents } from './events/registerEvents'
 import { setStatus } from './status/setStatus'
+
+startHttpServer()
 
 const client = new Client({
   intents: config.intents
