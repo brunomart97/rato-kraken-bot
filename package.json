@@ -6,7 +6,8 @@
   "author": "Bruno Martins <brunomart97@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/index.ts"
+    "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/index.ts",
+    "start": "ts-node src/index.ts"
   },
   "dependencies": {
     "discord.js": "^14.18.0",
